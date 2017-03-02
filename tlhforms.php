@@ -16,7 +16,7 @@
  * Plugin Name:       TLH Froms
  * Plugin URI:        https://github.com/thelearninghouse/tlhforms
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           0.0.1
+ * Version:           0.0.11
  * Author:            David Royer - Learning House
  * Author URI:        https://github.com/thelearninghouse
  * License:           GPL-2.0+
