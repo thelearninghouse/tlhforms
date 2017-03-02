@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              https://github.com/thelearninghouse
- * @since             1.0.0
+ * @since             0.0.1
  * @package           Tlhforms
  *
  * @wordpress-plugin
  * Plugin Name:       TLH Froms
  * Plugin URI:        https://github.com/thelearninghouse/tlhforms
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
+ * Version:           0.0.1
  * Author:            David Royer - Learning House
  * Author URI:        https://github.com/thelearninghouse
  * License:           GPL-2.0+
@@ -64,7 +64,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-tlhforms.php';
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
  *
- * @since    1.0.0
+ * @since    0.0.1
  */
 function run_tlhforms() {
 
