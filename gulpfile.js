@@ -37,6 +37,11 @@ gulp.task('hello', function() {
   console.log('Hello Zell!');
 })
 
+gulp.task('copy', ['useref'], function () {
+    gulp.src('./app/dist/tlhforms.js')
+        .pipe(gulp.dest('./TEST/'));
+});
+
 // Development Tasks
 // -----------------
 
@@ -142,6 +147,16 @@ gulp.task('build', function(callback) {
     'clean:dist',
     'sass',
     ['useref', 'images', 'fonts'],
+    callback
+  )
+})
+
+gulp.task('buildplugin', function(callback) {
+  runSequence(
+    'clean:dist',
+    'sass',
+    ['useref', 'images', 'fonts'],
+    'copy',
     callback
   )
 })
