@@ -1,5 +1,3 @@
-# Gulp Starter for CSS Tricks Tutorial  
+# TLH Forms Plugin
 
-This repo is a gulp starter for this CSS Tricks tutorial. 
-
-Remember to do run the `npm install` command after cloning this repo :) 
+## Info here soon
