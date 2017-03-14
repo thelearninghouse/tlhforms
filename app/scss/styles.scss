@@ -1,0 +1,42 @@
+@import "spectre";
+// @import "susy";
+// $susy: (
+//   /* Tells Susy to use 12 columns */
+//   columns: 12,
+//   /* Tells Susy that the container has a max-width of 1120px */
+//   container: 1120px,
+//   /* Tells Susy to use border-box */
+//   global-box-sizing: border-box
+//   );
+
+// @include border-box-sizing;
+
+// .wrap {
+//   @include container;
+// }
+
+// .main {
+//   @include span(50%);
+// }
+//
+// .sidebar {
+//   @include span(40%);
+// }
+
+
+// .form-wrapper {
+//   @include span(25%);
+// }
+
+.column {
+  max-width: 700px;
+}
+@import "stepform";
+.testing {
+  width: percentage(5/7);
+}
+
+
+.stepform .requestinfo {
+  // overflow-x: visible;;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimum-scale=1.0">
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css">
+  <link rel="stylesheet" href="css/lh-forms.css">
+  <!--endbuild-->
+
+  <style media="screen">
+  #form2 {
+    /*display: none;*/
+  }
+  hr {
+      margin: 3em 0;
+      height: 3px;
+      background: #6f6f6f;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="block1">TESTING</div>
+    <h1>Home</h1>
+    <div class="container">
+      <div class="columns">
+        <div class="sidebar column">
+          <div class="form1">
+            <form id="form1" action="" class="requestinfo" data-parsley-errors-messages-disabled>
+              <input id="city" type="hidden" name="city" value="">
+              <input id="state" type="hidden" name="state" value="">
+              <div class="field__wrapper field__full">
+                <label for="item_id">Program</label>
+                <select required name="item_id" id="item_id" aria-required="true" aria-invalid="false" aria-describedby="itemIdResponse">
+                  <option value="">Please Select</option>
+                  <option value="1111">Business</option>
+                  <option value="1112">Science</option>
+                  <option value="1113">Nursing</option>
+                </select>
+              </div>
+
+              <div class="field__wrapper field__half">
+                <label for="first_name">First Name</label>
+                <input required class="txt validate v-required" id="first_name" name="first_name" autocomplete="given-name" type="text" aria-required="true" aria-invalid="false" aria-describedby="firstNameResponse">
+              </div>
+
+              <div class="field__wrapper field__half">
+                <label for="last_name">Last Name</label>
+                <input required data-parsley-errors-container="#lastNameResponse" class="txt validate v-required" id="last_name" name="last_name" autocomplete="family-name" type="text" aria-required="true" aria-invalid="false" aria-describedby="lastNameResponse">
+              </div>
+
+              <div class="field__wrapper field__full">
+                <label for="email">Email</label>
+                <input required type="email" id="email" class="email txt validate v-required" name="email" aria-required="true" aria-invalid="false" aria-describedby="emailResponse">
+              </div>
+
+              <div class="field__wrapper field__half">
+                <label for="phone">Phone</label>
+                <input required type="text" id="phone" name="phone" class="phone txt validate v-required" aria-required="true" aria-invalid="false" aria-describedby="phoneResponse" />
+              </div>
+
+              <div class="field__wrapper field__half">
+                <label for="zip">Zip</label>
+                <input required type="zip" id="zip" name="zip" class="zip txt validate v-required" aria-required="true" aria-invalid="false" aria-describedby="zipResponse" />
+              </div>
+              <input type="submit" class="btn btn-default validate">
+            </form>
+          </div>
+<hr>
+          <div class="form2">
+          <form id="form2" action="" class="requestinfo" data-parsley-errors-messages-disabled>
+            <input id="city" type="hidden" name="city" value="">
+            <input id="state" type="hidden" name="state" value="">
+            <div class="field__wrapper field__full">
+              <label for="item_id2">Program</label>
+              <select required name="item_id2" id="item_id2" aria-required="true" aria-invalid="false" aria-describedby="itemIdResponse2">
+                <option value="">Please Select</option>
+                <option value="1111">Business</option>
+                <option value="1112">Science</option>
+                <option value="1113">Nursing</option>
+            </select>
+            </div>
+
+            <div class="field__wrapper field__half">
+              <label for="first_name2">First Name</label>
+              <input required class="txt validate v-required" id="first_name2" name="first_name2" autocomplete="given-name" type="text" aria-required="true" aria-invalid="false" aria-describedby="firstNameResponse2">
+            </div>
+
+            <div class="field__wrapper field__half">
+              <label for="last_name2">Last Name</label>
+              <input required data-parsley-errors-container="#lastNameResponse" class="txt validate v-required" id="last_name2" name="last_name2" autocomplete="family-name" type="text" aria-required="true" aria-invalid="false" aria-describedby="lastNameResponse2">
+            </div>
+
+            <div class="field__wrapper field__full">
+              <label for="email">Email</label>
+              <input required type="email" id="email2" name="email" class="email" class="txt validate v-required" aria-required="true" aria-invalid="false" aria-describedby="emailResponse2">
+            </div>
+
+            <div class="field__wrapper field__half">
+              <label for="phone2">Phone</label>
+              <input required type="text" id="phone2" name="phone" class="phone txt validate v-required" aria-required="true" aria-invalid="false" aria-describedby="phoneResponse2" />
+            </div>
+
+            <div class="field__wrapper field__half">
+              <label for="zip2">Zip</label>
+              <input required type="zip" id="zip2" name="zip" class="zip txt validate v-required" aria-required="true" aria-invalid="false" aria-describedby="zipResponse2" />
+            </div>
+            <input type="submit" class="btn btn-default validate">
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--build:js js/lh-forms.min.js -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.6.2/parsley.js" charset="utf-8"></script>
+  <!-- <script src="js/lh-forms.js"></script> -->
+  <script src="js/lib/spectre-styles.js"></script>
+  <script src="dist/tlhforms.js"></script>
+
+  <!-- endbuild -->
+  <script type="text/javascript">
+    // $('.requestinfo').validateForm({
+    //   // verifyPhone: false,
+    //   stepform: true,
+    //   onNextClicked: function(form) {
+    //     // You can do whatever you want here
+    //     // form = the form you have set the method on
+    //     console.log(form);
+    //   }
+    // });
+    $('#form1').validateForm({
+      // verifyPhone: false,
+      stepform: true,
+      onNextClicked: function(form) {
+        // You can do whatever you want here
+        // form = the form you have set the method on
+        // console.log(form);
+      }
+    });
+    $('#form2').validateForm({
+      // verifyPhone: false,
+      // stepform: true,
+      onNextClicked: function(form) {
+        // You can do whatever you want here
+        // form = the form you have set the method on
+        // console.log(form);
+      }
+    });
+  </script>
+</body>
+
+</html>

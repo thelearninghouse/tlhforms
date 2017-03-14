@@ -1,0 +1,115 @@
+.stepform {
+
+    input:not([type='submit']), select, .next, .previous {
+        // border: 5px dotted transparent;
+    }
+    .col-wrapper {
+        // border: 3px dotted #222;
+        position: relative;
+        overflow: hidden;
+        @media (min-width: 700px) {
+            //  @include span(5);
+        }
+    }
+
+    .blocks__wrapper {
+        // position: relative;
+        // white-space: nowrap;
+        // overflow: hidden;
+    }
+
+    .block1,
+    .block2 {
+        padding: 1em;
+        // white-space: nowrap;
+        // display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        background: rgba(201, 196, 196, 0.83);
+        transition: 0.3s ease;
+    }
+
+    label {
+        margin-bottom: 0;
+        display: block;
+    }
+
+    input[type=submit] {
+        float: right;
+    }
+
+    .next {
+        float: right;
+        margin-top: 3em;
+        background: #ccc;
+        padding: 0.25em 1em;
+        font-size: 1em;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .previous {
+        float: left;
+        font-size: 0.8em;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .validationResponse {
+        display: block;
+    }
+
+    input:not([type=submit]),
+    select {
+        width: 100%;
+        border: 5px dotted transparent;
+    }
+
+    .field__wrapper {
+        margin-bottom: 20px;
+    }
+
+    *:focus {
+        border: 5px dotted #ea3b5a;
+    }
+
+    .block1 {
+        &.hidden {
+            transform: translateX(-100%);
+        }
+    }
+
+    .block2 {
+        position: relative;
+
+        &.show {
+            transform: translateX(-100%);
+        }
+    }
+}
+
+// FLEX TRIAL
+.stepform {
+  .requestinfo {
+    display: block;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .blocks__wrapper {
+    display: flex;
+    width: 200%;
+    align-items: flex-start;
+  }
+  .block1, .block2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .next {
+    margin-left: auto;
+  }
+
+}

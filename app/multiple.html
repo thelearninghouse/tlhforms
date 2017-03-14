@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css">
+  <link rel="stylesheet" href="css/lh-forms.css">
+  <!--endbuild-->
+
+  <style media="screen">
+  #form2 {
+    /*display: none;*/
+  }
+  hr {
+      margin: 3em 0;
+      height: 3px;
+      background: #6f6f6f;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="block1">TESTING</div>
+    <h1>Home</h1>
+    <div class="container">
+      <div class="columns">
+        <div class="container">
+            <div class="l-wrap">
+                <form action="" id="form1" >
+                    <label>
+                        Test 1
+                        <input required type="text" name="name1" id="test1" />
+                    </label>
+                    <input type="submit" value="Submit"/>
+        <!--             <button type="submit">Submit</button> -->
+                </form>
+                <form action="" id="form2">
+                    <label>
+                        Test 2
+                        <input required type="text" id="test2" name="name1"/>
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--build:js js/lh-forms.min.js -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.6.2/parsley.js" charset="utf-8"></script>
+  <!-- <script src="js/lh-forms.js"></script> -->
+  <script src="js/lib/spectre-styles.js"></script>
+  <!-- <script src="js//webpack/index.js"></script> -->
+
+  <!-- endbuild -->
+  <script type="text/javascript">
+    $('#form1').parsley();
+    $('#form2').parsley();
+
+  </script>
+</body>
+
+</html>
